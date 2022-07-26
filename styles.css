@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-head-container{
+    background-color: #44bd32;
+    color: #fff;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+
+}
+.menu-container{
+    display: flex;
+    border-bottom: 1px solid lightgray;
+}
+
+.menu-container i {
+    margin: 0 1rem;
+    padding-block: 0.2rem;
+    font-size: 1.2rem;
+}
+.menu-container>select{
+    border-top: none;
+    padding-inline: 1rem;
+    outline:none;
+}
+
+
+.menu-container >*{
+  border-right: 1px solid lightgray;
+}
+.font-styling,.font-alignment{
+    margin: 0.4rem;
+    border-right:1px solid lightgray;
+    padding-inline: 1rem;
+    
+}
+.formula-container{
+    display: flex;
+    align-items: center;
+    border-bottom:1px solid lightgray;
+    /* padding-block:0.2rem ; */
+  
+}
+.formula-container > *{
+      padding-inline: 1rem;
+      border-right: 1px solid lightgray;
+}
+.formula-container img{
+    /* padding: 0; */
+    /* width: 3.2rem; */
+    height: 1.2rem;
+}
+.formula-img{
+      width: 3.2rem;
+      height: 1.45rem;
+      padding-block: 0.1rem;
+}
+.formula-input{
+    outline: none;
+    border: 1px solid lightgray;
+    border-block: none;
+    padding-block:0.2rem ;
+}
+.sheet-container{
+    background-color: rgb(238,238,238);
+    padding: 1rem 0 1rem 2rem;
+    display: flex;
+    font-family: 'Lato';
+    font-weight: 700;
+}
+.add-sheet{
+    padding: 0 1.2rem 0 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+.sheet-count > *{
+       padding-block:1rem;
+    padding-inline: 1rem;
+    border-inline: 1px solid lightgray;
+    color: #444;
+}
+.sheet-count>*:hover{
+ 
+    background-color: lightgray;
+}
+
+.cell-container{
+    /* border: 1px solid red; */
+    min-height: calc((100vh - 163px));
+    overflow:auto;
+    position: relative;
+}
+
+.cell{
+    width: 5rem;
+    height: 1.4rem;
+    text-align:center;
+    padding-top: 0.15rem;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    /* border: 1px solid gray; */
+    font-family: 'Lato';
+    font-size: 0.8rem;
+}
+
+.left-col{
+    position: absolute;
+    top: 1.4rem;
+}
+.left-col>*{
+    width: 2rem;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    background-color: rgb(238, 238, 238);
+}
+
+.top-row{
+    display: flex;
+    position: absolute;
+    left: 2rem;
+}
+
+.top-row>*{
+    min-width: 5rem;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    background-color: rgb(238, 238, 238);
+ 
+}
+
+.tl-cell{
+    height: 1.4rem;
+    width: 2rem;
+    position: absolute;
+    border: 1px solid lightgray;
+
+}
+
+.grid-row{
+    display: flex;
+    position: relative;
+    top: 1.4rem;
+    left: 2.01rem;
+}
+.grid-row>*{
+    min-width: 5rem;
+}
