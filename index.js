@@ -1,6 +1,7 @@
 let toprow = document.querySelector(".top-row")
 let leftcol = document.querySelector(".left-col");
 let grid = document.querySelector(".grid");
+let cellcontainer=document.querySelector(".cell-container")
 for (let i = 1; i <= 100; i++){
     let newcol = document.createElement("div");
     newcol.setAttribute("class", "cell");
@@ -26,3 +27,8 @@ for (let row = 1; row <= 100; row++) {
     }
     grid.append(newrow)
 }
+
+cellcontainer.scroll(function () {
+    console.log(cellcontainer.scrollLeft)
+    // leftcol.scrollLeft(this.scrollLeft)
+})
